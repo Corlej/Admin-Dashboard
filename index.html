@@ -8,24 +8,9 @@
     <link rel="stylesheet" href="./style.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-    
     </style>        
-    
-    <script>
-        function transitionAfterLoad() {
-            document.getElementById("body").classList.remove("no-transition");
-        }
-
-        (function() {
-            transitionAfterLoad();
-        } )()
-
-        $(function() {
-            $(body).removeClass("no-transition");
-        });
-    </script>
 </head>
-<body class="no-transition" id="body">
+<body>
     <div class="header">
             <div class="top">
                 <form type="search" autocomplete="off" class="search" method="get" action="#">
@@ -57,7 +42,7 @@
                 </div>
             </div>
     </div>
-    <div class="no-transition navigation">
+    <div class="navigation">
         <div class="navigation-flex">
             <div class="dashboard">
                 <ul>
@@ -239,64 +224,66 @@
                 </div>
             </div>
         </div>
-        <div class="announcements">
-            <h3>Announcements</h3>
-            <div class="container">
-                <ul>
-                    <li>
-                        <a href="#">
-                            <p class="title">site maitenance</p>
-                            <p class="description">Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec hendrerit sodales congue...</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <p class="title">community share day</p>
-                            <p class="description">Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum accusman porttitor...</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <p class="title">updated privacy policy</p>
-                            <p class="description">Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor. Cras fringilla sagittis sem mattis...</p>
-                        </a>
-                    </li>
-                </ul>
+        <div class="rightcontainer">
+            <div class="announcements">
+                <h3>Announcements</h3>
+                <div class="container">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <p class="title">site maitenance</p>
+                                <p class="description">Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec hendrerit sodales congue</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p class="title">community share day</p>
+                                <p class="description">Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum accusman porttitor</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p class="title">updated privacy policy</p>
+                                <p class="description">Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor. Cras fringilla sagittis sem mattis</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="trending">
-            <h3>Trending</h3>
-            <div class="container">
-                <ul>
-                    <li>
-                        <a href="#">
-                            <img src="./img/tegan.svg" alt="">
-                            <p class="name">@tegan</p>
-                            <p class="description">World Peace Builder</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./img/morgan.svg" alt="">
-                            <p class="name">@morgan</p>
-                            <p class="description">Super Cool Project</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./img/kendall.svg" alt="">
-                            <p class="name">@kendall</p>
-                            <p class="description">Life Changing App</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./img/alex.svg" alt="">
-                            <p class="name">@alex</p>
-                            <p class="description">No Traffic Maker</p>
-                        </a>
-                    </li>
-                </ul>
+            <div class="trending">
+                <h3>Trending</h3>
+                <div class="container">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="./img/tegan.svg" alt="">
+                                <p class="name">@tegan</p>
+                                <p class="description" max>World Peace Builder</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/morgan.svg" alt="">
+                                <p class="name">@morgan</p>
+                                <p class="description">Super Cool Project</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/kendall.svg" alt="">
+                                <p class="name">@kendall</p>
+                                <p class="description">Life Changing App</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/alex.svg" alt="">
+                                <p class="name">@alex</p>
+                                <p class="description">No Traffic Maker</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
