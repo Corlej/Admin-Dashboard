@@ -204,6 +204,22 @@ body {
     margin: .5rem 1rem .5rem 1rem;
 }
 
+.tooltip {
+    position: relative;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: hidden;
+  }
+
+.tooltip .tooltiptext::after {
+    display: none;
+}
+
 .content {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -422,6 +438,41 @@ h3 {
         grid-template-columns: 100px 10fr;
     }
 
+    .tooltip p {
+        visibility: hidden;
+    }
+
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+      }
+    
+    .tooltip .tooltiptext::after {
+        display: inline;
+        content: " ";
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -10px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent black transparent;
+      }
+    
+        .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+        position: absolute;
+        z-index: 1;
+        top: 115%;
+        left: 60%;
+        transform: translateX(-50%);
+    }
+
 }
 
 @media only screen and (max-width:725px){
@@ -465,6 +516,9 @@ h3 {
         margin: 0;
     }
 
+    .navigation a {
+        padding: 1rem;
+    }
     .navigation .dashboard img {
         padding: 0;
     }
@@ -476,6 +530,7 @@ h3 {
 
     .navigation .buttons img {
         margin: 0;
+        padding: 0;
     }
 
     .navigation ul li a:focus,
@@ -488,6 +543,21 @@ h3 {
     .navigation a h1,
     .navigation a p {
         display: none;
+    }
+
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+        position: absolute;
+        z-index: 1;
+        top: 110%;
+        left: 60%;
+        transform: translateX(-50%);
     }
 
     .content {
